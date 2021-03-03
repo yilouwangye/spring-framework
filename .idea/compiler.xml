@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="1_ioc" />
+        <module name="2_hello" />
+        <module name="5_autowired_1" />
+        <module name="5_autowired_2" />
+        <module name="4_dependency" />
+        <module name="3_constructor" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

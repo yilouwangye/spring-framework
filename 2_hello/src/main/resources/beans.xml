@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--等价于 Hello hello = new Hello() -->
+    <bean id="hello" class="Hello">
+        <!--设置变量值
+        value:固定值；
+        ref:动态值 -->
+        <property name="string" value="Spring"></property>
+    </bean>
+</beans>

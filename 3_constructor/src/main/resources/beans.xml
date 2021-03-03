@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id = "user" class="User">
+        <!-- 有参数构造，方法1.通过下标赋值 -->
+<!--        <constructor-arg index="0" value="200"/>-->
+        <!--方法2.通过类型赋值,不建议写，因为方法可能有多个相同类型的参数-->
+<!--        <constructor-arg type="int" value="600"/>-->
+        <!--方法3.通过参数名赋值-->
+        <constructor-arg name="num" value="500"/>
+    </bean>
+    <!--创建bean的时候，spring已实例化-->
+    <bean id="vip" class="Vip"></bean>
+    <!--alias创建别名,实例化的时候可以使用：User user = (User) context.getBean("userNew");-->
+    <alias name="user" alias="userNew"/>
+</beans>

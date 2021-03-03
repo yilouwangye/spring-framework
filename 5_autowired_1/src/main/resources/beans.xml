@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+    
+    <bean id="car" class="Car"/>
+    <bean id="miniCar" class="MiniCar"/>
+    <!--byName：会在容器上下文寻找，和自己对象set方法名后面的值对应的bean id，即：setCar(Car car)，首字母忽略大小写，如上面的<bean id="minicar" class="MiniCar"/>会报错-->
+    <!--byType：会在容器上下文寻找，和自己对象类型相同的bean-->
+    <bean id="people" class="People" autowire="byType">
+        <property name="name" value="cat"/>
+    </bean>
+</beans>

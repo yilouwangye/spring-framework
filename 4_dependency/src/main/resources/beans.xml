@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="age" class="Age" scope="prototype">
+        <property name="age" value="20"/>
+    </bean>
+    <bean id="name" class="Students">
+        <!-- 参数String类型-->
+        <property name="name" value="jean"/>
+        <!--复杂类型-->
+        <property name="age" ref="age"/>
+        <!--Array数组-->
+        <property name="likes">
+            <array>
+                <value>football</value>
+                <value>reading</value>
+                <value>basketball</value>
+            </array>
+        </property>
+        <!--List类型-->
+        <property name="skills">
+            <list>
+                <value>coding</value>
+                <value>sing</value>
+                <value>writing</value>
+            </list>
+        </property>
+        <!--Map类型-->
+        <property name="score">
+            <map>
+                <entry key="语文" value="126"/>
+                <entry key="物理" value="102"/>
+            </map>
+        </property>
+        <!--set类型-->
+        <property name="games">
+            <set>
+                <value>和平精英</value>
+                <value>cross fire</value>
+            </set>
+        </property>
+        <property name="info">
+            <props>
+                <prop key="localtion">2.006</prop>
+                <prop key="url">www.baidu.com</prop>
+            </props>
+        </property>
+    </bean>
+</beans>
