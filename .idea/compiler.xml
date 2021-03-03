@@ -7,12 +7,16 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="1_ioc" />
+        <module name="4_dependency" />
+        <module name="3_constructor" />
         <module name="2_hello" />
         <module name="5_autowired_1" />
         <module name="5_autowired_2" />
-        <module name="4_dependency" />
-        <module name="3_constructor" />
+        <module name="6_annotation" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="7_annotation" target="1.7" />
+    </bytecodeTargetLevel>
   </component>
 </project>

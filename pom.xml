@@ -15,6 +15,7 @@
     <module>4_dependency</module>
     <module>5_autowired_1</module>
     <module>5_autowired_2</module>
+    <module>6_annotation</module>
   </modules>
 
   <name>spring-framework</name>
